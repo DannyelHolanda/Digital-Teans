@@ -32,12 +32,12 @@ function listarEquipes() {
         for (let i = 0; i < equipes.length; i++) {
             listaDeEquipes.innerHTML += `
         <li>
-            <h4>${equipes[i].nome}<box-icon name="home" onClick=""></box-icon></h4>
+            <h4>${equipes[i].nome}</h4>
             <div>
             <h2>${equipes[i].participantes.length}<span>/${equipes[i].qtdMax}</span></h2>
             <div class='acoes'>
             <button onClick="modalAdicionar(${i})" >
-            Adicionar
+            + ADD
             </button>
             <button onClick='deletarEquipe(${i})'>
             <box-icon name='trash'></box-icon></button>
